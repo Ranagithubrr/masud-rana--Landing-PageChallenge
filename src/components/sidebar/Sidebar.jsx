@@ -1,13 +1,23 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { SidebarContext } from "../../context/SidebarContext";
 import { AiOutlineClose } from "react-icons/ai";
-import demoImg from '../../assets/glass.png'
 import { GiShoppingCart } from "react-icons/gi";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { ProductCartContext } from "../../context/ProductContext";
 const Sidebar = () => {
     const { sidebar, setSidebarContext } = useContext(SidebarContext);
-    const { cart, addToCart, removeFromCart } = useContext(ProductCartContext);
+    const { cart, addToCart, removeFromCart, reduceQuantity } = useContext(ProductCartContext);
+    const [total, setTotal] = useState(0);
+    const GetTotalAmmount = () => {
+        let totalAmount = 0;
+        for (let i = 0; i < cart.length; i++) {
+            totalAmount += cart[i].price * cart[i].quantity;
+        }
+        setTotal(totalAmount);
+    }
+    useEffect(() => {
+        GetTotalAmmount();
+    })
     return (
         <div>
             {
@@ -30,8 +40,8 @@ const Sidebar = () => {
                         cart.map((ele, index) => {
                             return (
                                 <div className="flex border-b-2 pb-4" key={ele.id}>
-                                    <div className="w-1/3">
-                                        <img src={demoImg} alt="product-image" className="h-24" />
+                                    <div className="w-1/3 flex items-center">
+                                        <img src={ele.thumbnail} alt="product-image" className="h-10" />
                                     </div>
                                     <div className="w-2/3 pl-2">
                                         <h4 className="font-semibold text-gray-700">{index + 1}. {ele.title}</h4>
@@ -39,9 +49,9 @@ const Sidebar = () => {
                                         <span className="font-semibold text-gray-600 text-xs">Quantity</span>
                                         <div className="flex justify-between items-center">
                                             <div className="">
-                                                <span className="px-2 font-semibold text-lg cursor-pointer">-</span>
+                                                <button className="px-2 font-semibold text-lg cursor-pointer" onClick={() => reduceQuantity(ele.id)}>-</button>
                                                 <span className="px-2 font-semibold text-lg cursor-pointer">{ele.quantity}</span>
-                                                <span className="px-2 font-semibold text-lg cursor-pointer">+</span>
+                                                <button className="px-2 font-semibold text-lg cursor-pointer" onClick={() => addToCart(ele)}>+</button>
                                             </div>
                                             <span className="cursor-pointer hover:text-red-700" onClick={() => removeFromCart(ele.id)}><FaRegTrashAlt /></span>
                                         </div>
@@ -49,6 +59,19 @@ const Sidebar = () => {
                                 </div>
                             )
                         })
+
+                    }
+                    {
+                        cart.length !== 0 &&
+                        <div className="mt-4">
+                            <span className="block text-sm font-semibold">Total : ${total}</span>                            
+                        </div>
+                    }
+                    {
+                        cart.length !== 0 &&
+                        <div className="text-center my-5">
+                            <button className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded shadow-sm">Check Out</button>
+                        </div>
 
                     }
                 </div>

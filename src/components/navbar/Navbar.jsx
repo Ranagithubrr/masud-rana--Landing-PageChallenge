@@ -1,12 +1,43 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Logo from '../../assets/logo.png';
 import { FaBars, FaShoppingCart, FaTimes, FaUser } from "react-icons/fa";
 import { SidebarContext } from '../../context/SidebarContext';
+import { ProductCartContext } from '../../context/ProductContext';
 const Navbar = () => {
     const [mobileMenu, setMobileMenu] = useState(false);
-    const {sidebar,setSidebarContext} = useContext(SidebarContext)
+    const { setSidebarContext } = useContext(SidebarContext);
+    const { cart } = useContext(ProductCartContext);
+    const [cartLength, setCartLength] = useState(0);
+    const CalculateCartLength = () => {
+        let totalLength = 0;
+        for (let i = 0; i < cart.length; i++) {
+            totalLength += cart[i].quantity;
+        }
+        setCartLength(totalLength);
+    }
+    useEffect(() => {
+        CalculateCartLength();
+    });
+
+    // sticky class setting
+    const [scrolling, setScrolling] = useState(false);
+
+    useEffect(() => {
+        function handleScroll() {
+            // Check if the user has scrolled past a certain threshold
+            if (window.scrollY > 500) {
+                setScrolling(true);
+            } else {
+                setScrolling(false);
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <nav className="bg-white flex justify-between items-center px-10 lg:px-14 py-4 ">
+        <nav className={`bg-white flex justify-between items-center px-10 lg:px-14 py-4 ${scrolling ? 'fixed top-0 w-full z-[1200] shadow-sm' : ''} `}>
             <div className="flex items-center">
                 <img src={Logo} alt="Logo" className="h-8 mr-2" />
             </div>
@@ -33,10 +64,11 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center">
 
-                <button className="text-gray-700 focus:outline-none mr-4" onClick={()=>setSidebarContext(true)}>
+                <button className="text-gray-700 focus:outline-none mr-4 relative text-2xl" onClick={() => setSidebarContext(true)}>
+                    <span className='absolute -top-3 -right-3 text-xs h-6 w-6 flex items-center justify-center bg-yellow-500 rounded-full text-gray-100 font-bold'>{cartLength}</span>
                     <FaShoppingCart />
                 </button>
-                <button className="text-gray-800 focus:outline-none">
+                <button className="text-gray-800 focus:outline-none text-2xl">
                     <FaUser />
                 </button>
                 <button>

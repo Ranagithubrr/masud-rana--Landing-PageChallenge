@@ -1,6 +1,7 @@
 import './App.css'
 import About from './components/about/About'
 import Featured from './components/featured/Featured'
+import Footer from './components/footer/Footer'
 import Hero from './components/herosection/Hero'
 import Navbar from './components/navbar/Navbar'
 import Products from './components/products/Products'
@@ -22,6 +23,7 @@ function App() {
           <Featured />
           <About />
           <Products />
+          <Footer />
         </SidebarProvider>
       </ProductCartProvider>
     </>

@@ -8,7 +8,7 @@ const ProductCard = ({Product}) => {
     return (
         <div className="flex flex-col border border-gray-200 rounded-lg overflow-hidden h-full">
             <div className="relative flex flex-col h-full">
-                <span className='absolute top-5 left-5 h-10 w-10 bg-orange-300 rounded-full flex items-center justify-center text-sm font-semibold'>10%</span>
+                <span className='absolute top-5 left-5 h-10 w-10 bg-orange-300 rounded-full flex items-center justify-center text-sm font-semibold'>{Product.discountPercentage}%</span>
                 <button className='absolute top-5 right-5 h-10 w-10 border border-gray-700 rounded-full flex items-center justify-center text-md font-semibold'>
                     <FaRegHeart />
                 </button>
