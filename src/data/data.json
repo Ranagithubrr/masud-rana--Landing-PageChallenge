@@ -1,0 +1,249 @@
+[
+    {
+        "id": 46736473,
+        "title": "Gucci Luxury Sunglasses",
+        "description": "Elevate your style with these luxury oversized sunglasses from Gucci, featuring a sleek black frame and gradient lenses.",
+        "price": 270,
+        "discountPercentage": 22,
+        "rating": 4.9,
+        "stock": 60,
+        "brand": "Gucci",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/51aKG3oW5gL._AC_SX679_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51aKG3oW5gL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/51tQO+Rnk4L._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/51AG3ck5-8L._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/519Yd3LgIKL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/51E5BJEI+mL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/51szXOYxuPL._AC_SX679_.jpg"
+        ],
+        "type": "best-sell"
+    },
+    {
+        "id": 46736474,
+        "title": "Persol Signature Sunglasses",
+        "description": "Experience timeless elegance with these Persol classic sunglasses, featuring polarized lenses and the signature Persol design.",
+        "price": 220,
+        "discountPercentage": 15,
+        "rating": 4.7,
+        "stock": 80,
+        "brand": "Persol",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/31EW68MOPLL._AC_SX679_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/31EW68MOPLL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/41NKAVFIMRL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/31rHUP4vQ8L._AC_SX679_.jpg"
+        ],
+        "type": "latest"
+    },
+    {
+        "id": 46736475,
+        "title": "Prada Baroque Sunglasses",
+        "description": "Make a statement with these elegant Prada Minimal Baroque sunglasses, featuring intricate details and a unique design.",
+        "price": 320,
+        "discountPercentage": 20,
+        "rating": 4.85,
+        "stock": 40,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/51ebTsw8-XL._AC_SX679_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51ebTsw8-XL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/51gsVUk0dYL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/51gzKeuVNQL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/81PJMXw+ptL._AC_SX522_.jpg"
+        ],
+        "type": "best-sell"
+    },
+    {
+        "id": 46736476,
+        "title": "Prada Minimal Baroque Sunglasses",
+        "description": "Stand out with these Prada Minimal Baroque II sunglasses, featuring intricate details and a distinct design.",
+        "price": 330,
+        "discountPercentage": 19,
+        "rating": 4.8,
+        "stock": 35,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/51i8HCjFaSL._AC_SX522_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51i8HCjFaSL._AC_SX522_.jpg",
+            "https://m.media-amazon.com/images/I/51vyFMeNJTL._AC_SX522_.jpg",
+            "https://m.media-amazon.com/images/I/61Me29Br8hL._AC_SX522_.jpg",
+            "https://m.media-amazon.com/images/I/61+5ujtJLQL._AC_SX522_.jpg"
+        ],
+        "type": "latest"
+    },
+    {
+        "id": 46736477,
+        "title": "MERRY'S Rectangular Polarized Sunglasses",
+        "description": "Step into sophistication with these Prada Baroque III sunglasses, featuring intricate details and a luxurious design.",
+        "price": 310,
+        "discountPercentage": 9,
+        "rating": 4.9,
+        "stock": 25,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/61us0IISI9L._AC_SX522_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/61us0IISI9L.AC_SX522.jpg",
+            "https://m.media-amazon.com/images/I/617Dt1qvIJL._AC_SX522_.jpg",
+            "https://m.media-amazon.com/images/I/61ysF+05cvL._AC_SX522_.jpg"
+        ],
+        "type": "best-sell"
+    },
+    {
+        "id": 46736478,
+        "title": "Sunglasses UV400 Fashion SunGlasses",
+        "description": "Define your style with these Prada Minimal Baroque IV sunglasses, featuring intricate details and a bold design.",
+        "price": 340,
+        "discountPercentage": 22,
+        "rating": 4.7,
+        "stock": 28,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/51weZVvVv8L._AC_SX522_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51weZVvVv8L.AC_SX522.jpg",
+            "https://m.media-amazon.com/images/I/61VbEeXxdeL.AC_SX522.jpg",
+            "https://m.media-amazon.com/images/I/71nHs6W1UvL.AC_SX522.jpg",
+            "https://m.media-amazon.com/images/I/613d8b9REPL.AC_SX522.jpg"
+        ],
+        "type": "special"
+    },
+    {
+        "id": 46736479,
+        "title": "Freckles Mark Vintage",
+        "description": "Make a fashion statement with these Prada Minimal Baroque V sunglasses, featuring intricate details and a luxurious design.",
+        "price": 320,
+        "discountPercentage": 11,
+        "rating": 4.85,
+        "stock": 30,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/513vOkPUkaL._AC_SX679_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/513vOkPUkaL.AC_SX679.jpg",
+            "https://m.media-amazon.com/images/I/611T+ouVkBL.AC_SX679.jpg",
+            "https://m.media-amazon.com/images/I/51EKoJnXXoL.AC_SX679.jpg",
+            "https://m.media-amazon.com/images/I/51DG61lANWL.AC_SX679.jpg",
+            "https://m.media-amazon.com/images/I/51TyaU01kHL.AC_SX679.jpg"
+        ],
+        "type": "best-sell"
+    },
+    {
+        "id": 46736480,
+        "title": "Skechers Mens Sea6165",
+        "description": "Express your individuality with these Prada Minimal Baroque VI sunglasses, featuring intricate details and a bold design.",
+        "price": 310,
+        "discountPercentage": 8,
+        "rating": 4.8,
+        "stock": 33,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/51vL2YskilL._AC_SX522_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51vL2YskilL.AC_SX522.jpg",
+            "https://m.media-amazon.com/images/I/51Fy1U0y09L.AC_SX522.jpg",
+            "https://m.media-amazon.com/images/I/71KLNrx58sL.AC_SX522.jpg",
+            "https://m.media-amazon.com/images/I/71gk7X3fXuL.AC_SY500.jpg"
+        ],
+        "type": "latest"
+    },
+    {
+        "id": 46736481,
+        "title": "Micheal Kors MK2024",
+        "description": "Exude sophistication with these Prada Minimal Baroque VII sunglasses, featuring intricate details and a luxurious design.",
+        "price": 330,
+        "discountPercentage": 18,
+        "rating": 4.9,
+        "stock": 27,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/71U8Ot3tx+L._AC_SX522_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/71U8Ot3tx+L.AC_SX522.jpg",
+            "https://m.media-amazon.com/images/I/71RbBS8qtrL.AC_SX679.jpg",
+            "https://m.media-amazon.com/images/I/31U12AGeChL.AC.jpg",
+            "https://m.media-amazon.com/images/I/81B0pX9o9-L.AC_SX522.jpg",
+            "https://m.media-amazon.com/images/I/71SXpaX2yBL.AC_SX522.jpg"
+        ],
+        "type": "special"
+    },
+    {
+        "id": 46736482,
+        "title": "SOJOS Oversized Square",
+        "description": "Exude sophistication with these Prada Minimal Baroque VII sunglasses, featuring intricate details and a luxurious design.",
+        "price": 256,
+        "discountPercentage": 14,
+        "rating": 5,
+        "stock": 57,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/6171AJc-sGL._AC_SX522_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51IbzrUpekL._AC_SX522_.jpg",
+            "https://m.media-amazon.com/images/I/6171AJc-sGL._AC_SX522_.jpg",
+            "https://m.media-amazon.com/images/I/71lrYZsyGhL._AC_SX522_.jpg"            
+        ],
+        "type": "special"
+    },
+    {
+        "id": 46736483,
+        "title": "Metal Square Sunglasses",
+        "description": "Exude sophistication with these Prada Minimal Baroque VII sunglasses, featuring intricate details and a luxurious design.",
+        "price": 330,
+        "discountPercentage": 18,
+        "rating": 4.7,
+        "stock": 66,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/51-U1SrNysL._AC_SX679_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51-U1SrNysL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/511mbEkpbxL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/51eA3F83sHL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/51uS8reJoQL._AC_SX679_.jpg"
+        ],
+        "type": "special"
+    },
+    {
+        "id": 46736484,
+        "title": "Shwae Tangle Free Aviator Sunglasses",
+        "description": "Exude sophistication with these Prada Minimal Baroque VII sunglasses, featuring intricate details and a luxurious design.",
+        "price": 88,
+        "discountPercentage": 34,
+        "rating": 4.8,
+        "stock": 12,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/61p7JS2J0yL._AC_SX679_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/61p7JS2J0yL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/619rSii9zXL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/61P+5TkFumL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/91KUZqK4w8L._AC_SX522_.jpg"
+        ],
+        "type": "special"
+    },
+    {
+        "id": 46736485,
+        "title": "Sunglasses UV400",
+        "description": "Exude sophistication with these Prada Minimal Baroque VII sunglasses, featuring intricate details and a luxurious design.",
+        "price": 330,
+        "discountPercentage": 22,
+        "rating": 4.9,
+        "stock": 4,
+        "brand": "Prada",
+        "category": "sunglasses",
+        "thumbnail": "https://m.media-amazon.com/images/I/51XfiEoUx5L._AC_SX522_.jpg",
+        "images": [
+            "https://m.media-amazon.com/images/I/51XfiEoUx5L._AC_SX522_.jpg",
+            "https://m.media-amazon.com/images/I/71vBFbpzuIL._AC_SX522_.jpg",
+            "https://m.media-amazon.com/images/I/61QAqU0tZrL._AC_SX522_.jpg"
+        ],
+        "type": "special"
+    }
+]
