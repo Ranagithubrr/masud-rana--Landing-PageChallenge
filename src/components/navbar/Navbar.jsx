@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Logo from '../../assets/logo.png';
 import { FaBars, FaShoppingCart, FaTimes, FaUser } from "react-icons/fa";
+import { SidebarContext } from '../../context/SidebarContext';
 const Navbar = () => {
     const [mobileMenu, setMobileMenu] = useState(false);
+    const {sidebar,setSidebarContext} = useContext(SidebarContext)
     return (
         <nav className="bg-white flex justify-between items-center px-10 lg:px-14 py-4 ">
             <div className="flex items-center">
@@ -31,7 +33,7 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center">
 
-                <button className="text-gray-700 focus:outline-none mr-4">
+                <button className="text-gray-700 focus:outline-none mr-4" onClick={()=>setSidebarContext(true)}>
                     <FaShoppingCart />
                 </button>
                 <button className="text-gray-800 focus:outline-none">
