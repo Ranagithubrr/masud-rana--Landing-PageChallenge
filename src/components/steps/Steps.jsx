@@ -2,6 +2,10 @@ import { GiSunglasses } from "react-icons/gi";
 import { IoMdSearch } from "react-icons/io";
 import { MdOutlinePayment } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
+
+
+// step component
+
 /* eslint-disable-next-line react/prop-types */
 export const Step = ({ Icon, Title, Desc }) => {
     return (
@@ -20,7 +24,7 @@ const Steps = () => {
         <div className="w-9/12 mx-auto -mt-16">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <Step Title="Search you sunglass" Desc="Shop Stylish Eyewear Now" Icon={<IoMdSearch />} />
-                <Step Title="Select Sunglass " Desc="Shade Your Style" Icon={<GiSunglasses  />} />
+                <Step Title="Select Sunglass " Desc="Shade Your Style" Icon={<GiSunglasses />} />
                 <Step Title="Make Payment" Desc="Securely Checkout Now" Icon={<MdOutlinePayment />} />
                 <Step Title="Received Product " Desc="See the World Clearly" Icon={<TbTruckDelivery />} />
             </div>
