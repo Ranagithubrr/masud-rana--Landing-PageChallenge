@@ -28,7 +28,7 @@ const Sidebar = () => {
                 <div className="fixed w-screen min-h-screen top-0 bg-gray-600 opacity-50 z-40" onClick={() => setSidebarContext(false)}></div>
             }
 
-            <div className={`z-50 fixed bg-white ${sidebar ? 'right-0' : '-right-full'} transition-all duration-200 ease-in-out h-screen lg:w-3/12 top-0 overflow-y-scroll`}>
+            <div className={`z-50 fixed bg-white ${sidebar ? 'right-0' : '-right-full'} transition-all duration-200 ease-in-out h-screen w-10/12 lg:w-3/12 top-0 overflow-y-scroll`}>
                 <span className="text-5xl mx-5 mt-5 block"><GiShoppingCart /> </span>
                 <span className='cursor-pointer absolute right-5 top-10' onClick={() => setSidebarContext(false)}><AiOutlineClose /></span>
                 <div className="mt-2 px-4">
