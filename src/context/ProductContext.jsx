@@ -8,6 +8,14 @@ const ProductCartProvider = ({ children }) => {
         const storedCart = localStorage.getItem('cart');
         return storedCart ? JSON.parse(storedCart) : [];
     });
+    // favorite
+    const [favorites, setFavorites] = useState(() => {
+        const storedFavorites = localStorage.getItem('favorites');
+        return storedFavorites ? JSON.parse(storedFavorites) : [];
+    });
+    useEffect(() => {
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+    }, [favorites]);   
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart));
     }, [cart]);
@@ -45,8 +53,17 @@ const ProductCartProvider = ({ children }) => {
         });
     }
 
+    // favourite
+    const toggleFavorite = (product) => {
+        if (favorites.find(item => item.id === product.id)) {
+            setFavorites(favorites.filter(item => item.id !== product.id));
+        } else {
+            setFavorites([...favorites, product]);
+        }
+    };
+
     return (
-        <ProductCartContext.Provider value={{ cart, addToCart, removeFromCart, reduceQuantity }}>
+        <ProductCartContext.Provider value={{ cart, addToCart, removeFromCart, reduceQuantity,favorites, toggleFavorite }}>
             {children}
         </ProductCartContext.Provider>
     );
