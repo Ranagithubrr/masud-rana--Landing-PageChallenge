@@ -16,11 +16,11 @@ const Sidebar = () => {
             totalAmount += cart[i].price * cart[i].quantity;
         }
         setTotal(totalAmount);
-    }
+    }   
     useEffect(() => {
         GetTotalAmmount();
         // eslint-disable-next-line
-    },[])
+    },[cart])
     return (
         <div>
             {
