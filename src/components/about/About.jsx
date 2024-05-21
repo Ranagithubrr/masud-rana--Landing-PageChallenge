@@ -1,4 +1,5 @@
-import glassImg from '../../assets/glass.png'
+import glassImg from '../../assets/glass.png';
+
 const About = () => {
     return (
         <div className="lg:flex my-20 lg:h-[30rem]">
@@ -16,7 +17,7 @@ const About = () => {
             </div>
 
             <div className='w-full lg:w-1/2 h-full'>
-                <img src={glassImg} alt="" className='object-cover h-full w-full' />
+                <img src={glassImg} alt="glassImg" className='object-cover h-full w-full' />
             </div>           
         </div>
 

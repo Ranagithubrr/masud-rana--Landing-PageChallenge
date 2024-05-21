@@ -1,5 +1,6 @@
 import ProductCard from "../productCard/ProductCard";
 
+// *** using local product data, because there is no api provided ***
 import ProductData from '../../data/data.json';
 import { useEffect, useState } from "react";
 
@@ -10,9 +11,10 @@ const Products = () => {
 
 
 
-    const [ShowingProduct, setShowingProduct] = useState([])
+    const [ShowingProduct, setShowingProduct] = useState([]);
     useEffect(() => {
         setShowingProduct(specialProducts)
+        // eslint-disable-next-line
     }, []);
     const ChangeProduct = (type) => {
         type === 0 ? setShowingProduct(latestProducts) : type === 1 ? setShowingProduct(specialProducts) : setShowingProduct(bestSellProducts)

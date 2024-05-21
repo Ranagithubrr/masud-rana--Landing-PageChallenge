@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Hero = () => {
+    // slick slider setting
     const settings = {
         dots: true,
         arrows:false,

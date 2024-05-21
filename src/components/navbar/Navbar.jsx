@@ -7,7 +7,9 @@ const Navbar = () => {
     const [mobileMenu, setMobileMenu] = useState(false);
     const { setSidebarContext } = useContext(SidebarContext);
     const { cart } = useContext(ProductCartContext);
-    const [cartLength, setCartLength] = useState(0);
+    const [cartLength, setCartLength] = useState(0);    
+
+    // calculating cart length
     const CalculateCartLength = () => {
         let totalLength = 0;
         for (let i = 0; i < cart.length; i++) {
@@ -24,7 +26,7 @@ const Navbar = () => {
 
     useEffect(() => {
         function handleScroll() {
-            // Check if the user has scrolled past a certain threshold
+            // Checking if the user has scrolled past 500px and add sticky nav
             if (window.scrollY > 500) {
                 setScrolling(true);
             } else {

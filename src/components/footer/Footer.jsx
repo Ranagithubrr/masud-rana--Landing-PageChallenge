@@ -3,13 +3,10 @@ const Footer = () => {
     return (
         <footer className="w-9/12 mt-24 mx-auto text-gray-700 pt-12 pb-6">
             <div className="container mx-auto flex flex-wrap justify-between">
-
                 <div className="w-full md:w-1/2 lg:w-2/5 mb-8">
                     <img src={Logo} alt="Logo" className="h-12 mb-4" />
                     <p className="text-sm md:w-3/4">Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampde</p>
                 </div>
-
-
                 <div className="w-full md:w-1/2 lg:w-1/5 mb-8">
                     <h5 className="text-lg font-semibold mb-4">Support</h5>
                     <ul className="space-y-2">

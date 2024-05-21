@@ -2,13 +2,14 @@
 import { createContext, useEffect, useState } from 'react';
 
 const ProductCartContext = createContext();
-
+// eslint-disable-next-line
 const ProductCartProvider = ({ children }) => {
+    // cart products
     const [cart, setCart] = useState(() => {
         const storedCart = localStorage.getItem('cart');
         return storedCart ? JSON.parse(storedCart) : [];
     });
-    // favorite
+    // favorite products
     const [favorites, setFavorites] = useState(() => {
         const storedFavorites = localStorage.getItem('favorites');
         return storedFavorites ? JSON.parse(storedFavorites) : [];
@@ -20,6 +21,7 @@ const ProductCartProvider = ({ children }) => {
         localStorage.setItem('cart', JSON.stringify(cart));
     }, [cart]);
 
+    // add product to cart
     const addToCart = (product) => {
         const existingItem = cart.find(item => item.id === product.id);
 
@@ -36,10 +38,12 @@ const ProductCartProvider = ({ children }) => {
         }
     };
 
+    // remove product from cart
     const removeFromCart = (productId) => {
         const updatedCart = cart.filter(item => item.id !== productId);
         setCart(updatedCart);
     };
+    // reduce cart quantity
     const reduceQuantity = (productId) => {
         setCart((prevCart) => {
             return prevCart
@@ -53,7 +57,7 @@ const ProductCartProvider = ({ children }) => {
         });
     }
 
-    // favourite
+    // favourite product toggler
     const toggleFavorite = (product) => {
         if (favorites.find(item => item.id === product.id)) {
             setFavorites(favorites.filter(item => item.id !== product.id));

@@ -4,7 +4,7 @@ import { MdOutlinePayment } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
 
 
-// step component
+// single step component start
 
 /* eslint-disable-next-line react/prop-types */
 export const Step = ({ Icon, Title, Desc }) => {
@@ -18,6 +18,9 @@ export const Step = ({ Icon, Title, Desc }) => {
         </div>
     )
 }
+
+// single step component end
+
 
 const Steps = () => {
     return (

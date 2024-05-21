@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
+
 import { FaShoppingCart } from 'react-icons/fa'
 import BgImage from '../../assets/slder-bg-man.png'
-/* eslint-disable-next-line react/prop-types */
 const Mainslider = ({ Title }) => {
     return (
         <div className="bg-gray-200 pt-8">

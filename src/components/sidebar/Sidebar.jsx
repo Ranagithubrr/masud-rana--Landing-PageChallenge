@@ -8,6 +8,8 @@ const Sidebar = () => {
     const { sidebar, setSidebarContext } = useContext(SidebarContext);
     const { cart, addToCart, removeFromCart, reduceQuantity } = useContext(ProductCartContext);
     const [total, setTotal] = useState(0);
+    
+    // calculating gross total amount
     const GetTotalAmmount = () => {
         let totalAmount = 0;
         for (let i = 0; i < cart.length; i++) {
@@ -17,7 +19,8 @@ const Sidebar = () => {
     }
     useEffect(() => {
         GetTotalAmmount();
-    })
+        // eslint-disable-next-line
+    },[])
     return (
         <div>
             {
