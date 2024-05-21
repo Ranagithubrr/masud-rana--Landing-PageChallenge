@@ -6,7 +6,7 @@ import bg4 from '../../assets/4.png';
 
 const Featured = () => {
     return (
-        <div className="w-full block lg:w-9/12 mx-auto my-10">
+        <div className="w-11/12 block lg:w-9/12 mx-auto my-10 overflow-x-hidden">
             <div className='h-full lg:h-[800px] lg:flex'>
                 <div className='w-full lg:w-1/2 h-full mx-2'>
                     <div className="w-full h-[350px] lg:h-[55%] my-4  bg-center flex align-bottom justify-center" style={{

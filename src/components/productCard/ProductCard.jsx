@@ -42,8 +42,8 @@ const ProductCard = ({ Product }) => {
                                     {
                                         Product.images.map((ele, index) => {
                                             return (
-                                                <div key={index} className='h-44'>
-                                                    <img src={ele} />
+                                                <div key={index} className='h-52 lg:h-44'>
+                                                    <img src={ele} className='h-full w-full'/>
                                                 </div>
                                             )
                                         })
