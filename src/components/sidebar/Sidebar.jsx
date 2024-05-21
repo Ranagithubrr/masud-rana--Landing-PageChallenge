@@ -22,7 +22,7 @@ const Sidebar = () => {
         <div>
             {
                 sidebar &&
-                <div className="fixed w-screen min-h-screen top-0 bg-gray-600 opacity-50 z-10" onClick={() => setSidebarContext(false)}></div>
+                <div className="fixed w-screen min-h-screen top-0 bg-gray-600 opacity-50 z-40" onClick={() => setSidebarContext(false)}></div>
             }
 
             <div className={`z-50 fixed bg-white ${sidebar ? 'right-0' : '-right-full'} transition-all duration-200 ease-in-out h-screen lg:w-3/12 top-0 overflow-y-scroll`}>

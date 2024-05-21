@@ -37,7 +37,7 @@ const Navbar = () => {
         };
     }, []);
     return (
-        <nav className={`bg-white flex justify-between items-center px-10 lg:px-14 py-4 ${scrolling ? 'fixed top-0 w-full z-[1200] shadow-sm' : ''} `}>
+        <nav className={`bg-white flex justify-between items-center px-10 lg:px-14 py-4 ${scrolling ? 'fixed top-0 w-full z-20 shadow-sm lg:py-2' : ''} `}>
             <div className="flex items-center">
                 <img src={Logo} alt="Logo" className="h-8 mr-2" />
             </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
                     <a href="#" className="text-gray-800 font-semibold hover:text-gray-900">About Us</a>
                 </li>
                 <li className="px-1 py-1 md:py-0">
-                    <a href="#" className="text-gray-800 font-semibold hover:text-gray-900">Products</a>
+                    <a href="#products" className="text-gray-800 font-semibold hover:text-gray-900">Products</a>
                 </li>
                 <li className="px-1 py-1 md:py-0">
                     <a href="#" className="text-gray-800 font-semibold hover:text-gray-900">Features</a>
