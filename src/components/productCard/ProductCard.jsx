@@ -51,7 +51,7 @@ const ProductCard = ({ Product }) => {
 
                                 </Slider>
                             </div>
-                            <div className='flex flex-col p-4 flex-grow'>
+                            <div className='flex flex-col p-4 flex-grow mt-8 lg:mt-2'>
                                 <h5 className='font-semibold text-gray-800 text-xl mt-4'>{Product.title}</h5>
                                 <h6 className='font-bold text-gray-800 mb-5'>${Product.price} <del className='font-semibold text-gray-400 text-sm'>{Product.genprice && `$${Product.genprice}`}</del></h6>
                                 <button onClick={() => addToCart(Product)} className='mt-auto self-start w-auto px-4 py-2 bg-gray-900 hover:bg-gray-800 text-gray-100 font-semibold rounded flex items-center justify-center'>
