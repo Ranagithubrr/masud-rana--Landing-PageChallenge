@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify'
 import './App.css'
 import About from './components/about/About'
 import Featured from './components/featured/Featured'
@@ -14,6 +15,18 @@ function App() {
 
   return (
     <>
+      <ToastContainer
+        position="bottom-left"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable={false}
+        pauseOnHover
+        theme="light"
+      />
       <ProductCartProvider>
         <SidebarProvider>
           <Navbar />
