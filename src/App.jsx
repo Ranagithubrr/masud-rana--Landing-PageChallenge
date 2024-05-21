@@ -13,7 +13,7 @@ import { SidebarProvider } from './context/SidebarContext'
 function App() {
 
   return (
-    <>
+    <div className='App'>
       <ProductCartProvider>
         <SidebarProvider>
           <Navbar />
@@ -26,7 +26,7 @@ function App() {
           <Footer />
         </SidebarProvider>
       </ProductCartProvider>
-    </>
+    </div>
   )
 }
 

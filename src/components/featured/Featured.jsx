@@ -6,10 +6,10 @@ import bg4 from '../../assets/4.png';
 
 const Featured = () => {
     return (
-        <div className="w-11/12 block lg:w-9/12 mx-auto my-10 overflow-x-hidden">
-            <div className='h-full lg:h-[800px] lg:flex'>
-                <div className='w-full lg:w-1/2 h-full mx-2'>
-                    <div className="w-full h-[350px] lg:h-[55%] my-4  bg-center flex align-bottom justify-center" style={{
+        <div className="w-11/12 block lg:w-9/12 mx-auto my-10 overflow-hidden box-border">
+            <div className='h-full lg:h-[800px] lg:flex box-border'>
+                <div className='w-full lg:w-1/2 h-full mx-2 box-border'>
+                    <div className="w-full h-[350px] lg:h-[50%] my-4  bg-center flex align-bottom justify-center" style={{
                         backgroundImage: `url(${bg1})`,
                         backgroundSize: '100% 100%'
                     }}
@@ -20,7 +20,7 @@ const Featured = () => {
                             <button className='bg-gray-800 mb-2 hover:bg-gray-700 text-gray-100 rounded font-semibold px-6 py-2 outline-none flex items-center justify-center mt-4 mx-auto '>Buy Now</button>
                         </div>
                     </div>
-                    <div className="w-full h-[350px] lg:h-[45%]  bg-center flex align-bottom justify-center" style={{
+                    <div className="w-full h-[350px] lg:h-[40%]  bg-center flex align-bottom justify-center" style={{
                         backgroundImage: `url(${bg3})`,
                         backgroundSize: '100% 100%'
                     }}
@@ -32,8 +32,8 @@ const Featured = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full lg:w-1/2 h-full mx-2'>
-                    <div className="w-full h-[350px] lg:h-[45%] my-4  bg-center flex align-bottom justify-center" style={{
+                <div className='w-full lg:w-1/2 h-full mx-2 box-border'>
+                    <div className="w-full h-[350px] lg:h-[40%] my-4  bg-center flex align-bottom justify-center" style={{
                         backgroundImage: `url(${bg2})`,
                         backgroundSize: '100% 100%'
                     }}
@@ -44,7 +44,7 @@ const Featured = () => {
                             <button className='bg-gray-800 mb-2 hover:bg-gray-700 text-gray-100 rounded font-semibold px-6 py-2 outline-none flex items-center justify-center mt-4 mx-auto '>Buy Now</button>
                         </div>
                     </div>
-                    <div className="w-full h-[350px] lg:h-[55%]  bg-center flex align-bottom justify-center" style={{
+                    <div className="w-full h-[350px] lg:h-[50%]  bg-center flex align-bottom justify-center" style={{
                         backgroundImage: `url(${bg4})`,
                         backgroundSize: '100% 100%'
                     }}
